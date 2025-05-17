@@ -46,10 +46,8 @@ function App() {
 
     }
 
-
     const hasDraw = gameTurns.length === 9 && !winner;
 
-    console.log(winner + "or " + hasDraw)
     function handleSelectSquare(rowIndex, colIndex) {
         setGameTurns((prevTurns) => {
 
@@ -73,6 +71,7 @@ function App() {
                 [symbol]: name
             }
         })
+        console.log("player X" + players.X + " player O " + players.O)
 
     }
     return (
